@@ -295,6 +295,7 @@ body.rwd .hero {
 }
 
 
+
 .experiencia {
   display: flex;
   flex-direction: column;
@@ -359,4 +360,47 @@ body.rwd .hero {
 .experiencias ul li {
   margin-bottom: 0.5rem;
   line-height: 1.5;
+}
+
+/* --------- RESPONSIVE --------- */
+
+/* Móvil */
+@media (max-width: 600px) {
+  .titleExperiencia {
+    margin: 2rem 1rem;
+  }
+
+  .titleExperiencia h2 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .experiencias {
+    width: 90%;
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1023px) {
+  .titleExperiencia h2 {
+    width: 80%;
+    font-size: 1.8rem;
+  }
+
+  .experiencias {
+    width: 70%;
+  }
+}
+
+/* Escritorio grande */
+@media (min-width: 1024px) {
+  .contentExperiencia {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .experiencias {
+    width: 40%;
+  }
 }
